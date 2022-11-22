@@ -1,0 +1,62 @@
+:root {
+    --black: #1b1d29;
+    --white: #ffffff;
+    --bg-overlay: RGB(253,255,206,0.96);
+    --btn-red:#fe4c13;
+    --btn-red-hover:#ee3a01;
+    --btn-light-blue:#3fb3e4;
+    --btn-light-blue-hover:#21a7e0;
+    --shadow: #cccea7;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body,
+html,
+#app{
+    height: 100%;
+}
+html{
+    font-size:62.5%
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+#app{
+    background: var(--bg-overlay);
+    overflow-y: scroll;
+}
+
+.app-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-size: cover;
+    z-index: -1;
+}
+
+header{
+    background: var(--black);
+    padding: 1rem 2rem;
+}
+
+.logo{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h1{
+    font-size: 3rem;
+}
+
+.logo img{
+    margin-right: 1rem;
+    width: 4rem;
+}
